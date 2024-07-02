@@ -1,0 +1,7 @@
+ How memory is managed in Python?
+
+
+ What is the purpose continue statement in python?
+Continue statement in python is used to skip the rest of the code in the current iteration and continue with the next
+iteration. It is used in cases when we need to bypass on certain condition but then not coming out of loop and
+continuing with the next iteration.
