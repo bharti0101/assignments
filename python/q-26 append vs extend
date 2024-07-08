@@ -1,0 +1,35 @@
+ Differentiate between append () and extend () methods?
+
+--> append():
+*adds single element
+*adds as single element at the end
+*adds full item as a single element
+*doesn't return any value
+*accepts single input at a time hence faster in execution
+*time complexity - O(1)
+*ex1- li1 = [4,3,2], li2 = ['A','B','C']
+li1.append(li2)
+print(li1)
+o/p- [4,3,2,['A','B','C']]
+*ex2- li1 = [4,3,2], li2 = ['ABC']
+li1.append(li2)
+print(li1)
+o/p- [4,3,2,['ABC']]
+
+
+--> extend():
+*adds multiple elements
+*adds multiple elements at once present as iterator
+*adds each element of the iterator as one single element after iterating through each of the element
+*returns None
+*accepts multiple elements from the iterator as input hence execution is slower as compared to append function
+*time complexity - O(k) where k = length of the iterator/list to be added
+*ex1 - li1 = [4,3,2], li2 = ['A','B','C']
+li1.extend(li2)
+print(li1)
+o/p- [4,3,2,'A','B','C']
+*ex2- li1 = [4,3,2], li2 = ['ABC']
+li1.append(li2)
+print(li1)
+o/p- [4,3,2,'A','B','C']
+
