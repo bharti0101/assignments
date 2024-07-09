@@ -1,0 +1,8 @@
+ How will you compare two lists?
+
+--> in case the list elements are integer or non int:
+method - 1
+take two lists, sort elements and lastly compare using '=='
+method - 2
+take list, convert to set and compare using '=='
+
