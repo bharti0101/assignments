@@ -5,13 +5,12 @@ import validation
 
 def display_menu():
     """Display the application menu to the user."""
-    print("\n" + "=" * 30)
-    print("       E-Note Book       ")
-    print("=" * 30)
-    print("1. Add Note")
-    print("2. View Notes")
-    print("3. Exit")
-    print("=" * 30)
+    print("     Welcome to python  E-Note")
+    print("\n")
+    print("     Press 1 for generate Note")
+    print("     Press 2 for view Note")
+    print("     Press 3 for Exit")
+    print("\n")
 
 def main():
     """Main function driving the application."""
@@ -20,7 +19,7 @@ def main():
 
     while True:
         display_menu()
-        choice = input("Enter your choice (1-3): ")
+        choice = input("Enter your choice : ")
 
         if validation.validate_choice(choice):
             if choice == '1':
@@ -43,4 +42,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

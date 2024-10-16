@@ -9,8 +9,15 @@ def initialize_notes_directory():
 
 def add_note():
     """Add a new note by asking the user for input."""
+    while True:
+        name = input("Enter python E-Note Generator Name: ").strip()
+        if name.isalpha():
+            break
+        else:
+            print("Error: Invalid Input")
     title = input("Enter note title: ").strip()
     content = input("Enter note content: ").strip()
+
 
     if title and content:
         filename = f"{NOTES_DIR}{title}.txt"
